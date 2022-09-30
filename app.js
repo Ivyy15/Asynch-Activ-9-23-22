@@ -4,6 +4,12 @@ const app = express();
 
 //to use public
 app.use(express.static('public'))
+<<<<<<< HEAD
+=======
+app.use('/public', express.static('public'));
+
+
+>>>>>>> 8d85957c20adfccba84008b7f29dda44af945a4c
 
 //register view engine
 app.set('view engine', 'ejs')
@@ -49,6 +55,10 @@ app.get('/shipping', (req, res) => {
     res.render('shipping');
 })
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8d85957c20adfccba84008b7f29dda44af945a4c
 app.listen(4000, () => {
     console.log("server is running at port 4000...");
 })
